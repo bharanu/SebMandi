@@ -1,0 +1,214 @@
+
+/* App.css */
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("../../public/images/apple1.jpeg"); /* Updated path to the image */
+  background-color: #f7f9eb; /* Light green background */
+  background-size: cover; /* Set the background image to cover the entire background */
+  background-repeat: no-repeat; /* Prevent background image repetition */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Set a minimum height to ensure the content covers the full viewport */
+}
+
+.container {
+  max-width: 400px; /* Adjust the maximum width of the form container */
+  padding: 20px;
+  background-color: #fff; /* White container background */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to the container */
+  border-radius: 8px; /* Rounded corners for the container */
+  margin-top: 30px;
+  
+ /* Adjust the margin to move the container down from the center */
+  display: flex;
+  flex-direction: column; /* Stack the input fields in a column layout */
+  align-items:flex-start; /* Center the content horizontally */
+  transform: translateX(0); /* Start outside the viewport (right side) */
+  transition: transform 0.25s ease; /* Add a transition effect to slide in */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #4caf50; /* Dark green for the header text */
+  text-transform: capitalize; /* Capitalize the first letter of each word */
+  letter-spacing: 2px;
+}
+
+form {
+  display: flex;
+  margin-left:0px;
+  flex-direction:column;
+  align-items:center; /* Stack the input fields in a column layout */
+ /* Center the content horizontally */
+  width: 100%;
+   /* Make sure the form takes up the full width of the container */
+}
+
+form input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%; /* Make the input fields take up the full width of the form */
+  color: black; /* Set text color to black */
+  background-color: black; /* Set background color to black */
+  color: white; /* Set text color to white */
+}
+
+form input::placeholder {
+  color: white; /* Set placeholder text color to white */
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+/* Styles for the filtering form */
+.filter-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  transform: translateX(100%); /* Start outside the viewport (right side) */
+  transition: transform 0.25s ease; /* Add a transition effect to slide in */
+}
+
+.filter-input {
+  width: 200px; /* Adjust the width as needed */
+  padding: 5px;
+  font-size: 16px;
+  color: black; /* Set text color to black */
+  background-color: black; /* Set background color to black */
+  color: white; /* Set text color to white */
+}
+
+.filter-input::placeholder {
+  color: white; /* Set placeholder text color to white */
+}
+
+.filter-button {
+  background-color:#45a049;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  
+}
+
+.filter-button:hover {
+  opacity: 0.8;
+}
+
+/* Slide the forms into the center of the page */
+.container.show {
+  transform: translateX(0);
+  transition: transform 0.1s ease; /* Adjust the transition speed to 0.25 seconds */
+  overflow: visible; /* Remove the overflow hidden */
+}
+
+
+.filter-container.show {
+  transform: translateX(0);
+  transition: transform 0.1s ease; /* Adjust the transition speed to 0.25 seconds */
+  overflow: visible;
+}
+
+/* App.css */
+
+/* Styles for the farmer form and filtering form */
+.is-form-visible {
+  transform: translateX(0); /* Slide the form to the center */
+  transition: transform 0.1s ease;
+  overflow: visible; /* Transition with 0.25 seconds duration */
+}
+
+.is-form-hidden {
+  transform: translateX(100%); /* Slide the form to the right */
+  transition: transform 0.1s ease; /* Transition with 0.25 seconds duration */
+}
+
+/* App.css */
+
+/* ... Existing CSS styles ... */
+
+/* Styles for the headings */
+.heading-container {
+  text-align: center;
+  color: #f7eb0d;;
+  padding:30px; 
+  max-width: 600px;
+  margin: 0 auto; 
+  font-size:50px;
+  transform: translateX(100%); /* Start outside the viewport (right side) */
+  transition: transform 0.25s ease; /* Adjust the transition speed to 0.25 seconds */
+}
+
+.heading {
+  color: #f7eb0d; /* Dark green for the heading text */
+  text-transform: capitalize; /* Capitalize the first letter of each word */
+  letter-spacing: 2px;
+  margin: bottom 20px;
+  
+  
+  
+  
+  
+
+} 
+
+/* Slide the forms and headings into the center of the page */
+.container.show,
+.heading-container.show {
+  transform: translateX(0); /* Slide to the center */
+  transition: transform 0.1s ease; /* Adjust the transition speed to 0.25 seconds */
+  overflow: visible; /* Remove the overflow hidden */
+}
+
+/* ... Rest of the styles remain unchanged ... */
+
+
+
+/* ... Rest of the styles remain unchanged ... */
+
+
+/* ... Existing CSS styles ... */
+
+/* Styles for the farmer list */
+.farmer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.farmer-item {
+  background-color: #b7792e; /* Dark green background for the farmer item */
+  color: white; /* White text color for better visibility */
+  padding: 10px;
+  flex-direction: column;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  font-weight: bold; /* Make the text bold for better visibility */
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ... Rest of the styles remain unchanged ... */
