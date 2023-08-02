@@ -11,8 +11,8 @@ app.use(cors({
   origin: "http://localhost:3000", // Replace with the URL of your frontend
 }));
 
-const port = process.env.PORT || 5001;
-const uri = process.env.MONGODB_URI;
+const port = 5001;
+const uri = mongodb+srv://piyushsharmasml0:6RfvZnbwPWPI7V62@cluster0.4i7ogiu.mongodb.net/?retryWrites=true&w=majority
 
 console.log("MongoDB URI:", uri);
 mongoose.connect(uri, {
