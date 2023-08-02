@@ -8,7 +8,7 @@ dotenv.config();
 
 const app = express();
 app.use(cors({
-  origin: "http://localhost:3000", // Replace with the URL of your frontend
+  origin: "https://seb-mandi-habb.vercel.app", // Replace with the URL of your frontend
 }));
 
 const port = 5001;
