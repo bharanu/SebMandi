@@ -40,7 +40,8 @@ const App = () => {
         date: dateFilter,
       }).toString();
 
-      const response = await fetch(`http://localhost:5001/farmers?${queryParams}`);
+      const response = await fetch(`https://seb-mandi.vercel.app
+/farmers?${queryParams}`);
       const data = await response.json();
       setFarmers(data);
     } catch (error) {
@@ -93,7 +94,7 @@ const App = () => {
     }
   
     try {
-      const response = await fetch("http://localhost:5001/farmers", {
+      const response = await fetch("https://seb-mandi.vercel.app/farmers", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -108,7 +109,7 @@ const App = () => {
       const data = await response.json();
   
       // Fetch all farmers' data again to get the updated data from the server
-      const updatedDataResponse = await fetch("http://localhost:5001/farmers");
+      const updatedDataResponse = await fetch("https://seb-mandi.vercel.app/farmers");
       const updatedData = await updatedDataResponse.json();
       updatedData.sort((a, b) => b.price - a.price); // Sort in descending order of prices
   
@@ -219,5 +220,8 @@ const App = () => {
 };
 
 export default App;
+
+
+
 
 
