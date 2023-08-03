@@ -8,7 +8,7 @@ dotenv.config();
 
 const app = express();
 app.use(cors({
-  origin: "", // Replace with the URL of your frontend
+  origin: "https://seb-mandi-u13f.vercel.app", // Replace with the URL of your frontend
 }));
 
 
