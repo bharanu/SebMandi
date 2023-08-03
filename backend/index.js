@@ -8,7 +8,7 @@ dotenv.config();
 
 const app = express();
 app.use(cors({
-  origin: "https://seb-mandi-habb.vercel.app", // Replace with the URL of your frontend
+  origin: "https://seb-mandi-l7nn.vercel.app", // Replace with the URL of your frontend
 }));
 
 const port = process.env.PORT || 5001;
@@ -33,7 +33,7 @@ const Farmer = mongoose.model("Farmer", farmerSchema);
 app.use(cors());
 app.use(express.json());
 
-app.get("https://seb-mandi-habb.vercel.app/farmers", async (req, res) => {
+app.get("/farmers", async (req, res) => {
   try {
     const { quality, district, date } = req.query; // Get date from the query parameters
 
@@ -56,7 +56,7 @@ app.get("https://seb-mandi-habb.vercel.app/farmers", async (req, res) => {
   }
 });
 
-app.post("https://seb-mandi-habb.vercel.app/farmers", async (req, res) => {
+app.post("/farmers", async (req, res) => {
   const { name, price, quality, district, date } = req.body; // Include date from the request body
   if (!name || !price || !quality || !district || !date) {
     return res.status(400).json({ message: "All fields are required." });
