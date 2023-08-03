@@ -8,8 +8,9 @@ dotenv.config();
 
 const app = express();
 app.use(cors({
-  origin: "https://seb-mandi-l7nn.vercel.app", // Replace with the URL of your frontend
+  origin: "", // Replace with the URL of your frontend
 }));
+
 
 const port = process.env.PORT || 5001;
 const uri = "mongodb+srv://piyushsharmasml0:6RfvZnbwPWPI7V62@cluster0.4i7ogiu.mongodb.net/sebwale?retryWrites=true&w=majority"
