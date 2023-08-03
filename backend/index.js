@@ -13,7 +13,7 @@ app.use(cors({
 
 
 const port = process.env.PORT || 5001;
-const uri = "mongodb+srv://piyushsharmasml0:6RfvZnbwPWPI7V62@cluster0.4i7ogiu.mongodb.net/sebwale?retryWrites=true&w=majority"
+const uri = "mongodb+srv://piyushsharmasml0:6RfvZnbwPWPI7V62@cluster0.4i7ogiu.mongodb.net/?retryWrites=true&w=majority"
 
 console.log("MongoDB URI:", uri);
 mongoose.connect(uri, {
