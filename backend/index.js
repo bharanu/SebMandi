@@ -11,7 +11,7 @@ app.use(cors({
   origin: "https://seb-mandi-habb.vercel.app", // Replace with the URL of your frontend
 }));
 
-const port = 5001;
+const port = process.env.PORT || 5001;
 const uri = "mongodb+srv://piyushsharmasml0:6RfvZnbwPWPI7V62@cluster0.4i7ogiu.mongodb.net/sebwale?retryWrites=true&w=majority"
 
 console.log("MongoDB URI:", uri);
