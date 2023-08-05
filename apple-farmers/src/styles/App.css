@@ -61,7 +61,7 @@ form input {
 }
 
 form input::placeholder {
-  color: #777; /* Adjust placeholder text color */
+  color: white; /* Adjust placeholder text color */
 }
 
 /* ... Rest of the styles remain unchanged ... */
