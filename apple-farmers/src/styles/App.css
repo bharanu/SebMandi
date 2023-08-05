@@ -55,15 +55,16 @@ form input {
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 16px;
-  width: 100%; /* Make the input fields take up the full width of the form */
-  color: black; /* Set text color to black */
-  background-color: black; /* Set background color to black */
-  color: white; /* Set text color to white */
+  width: 100%;
+  color: black;
+  background-color: white; /* Set background color to white */
 }
 
 form input::placeholder {
-  color: white; /* Set placeholder text color to white */
+  color: #777; /* Adjust placeholder text color */
 }
+
+/* ... Rest of the styles remain unchanged ... */
 
 form button {
   padding: 10px 20px;
@@ -95,28 +96,32 @@ form button:hover {
 }
 
 .filter-input {
-  width: 200px; /* Adjust the width as needed */
+  width: 100%; /* Adjust the width to 100% */
   padding: 5px;
   font-size: 16px;
-  color: black; /* Set text color to black */
-  background-color: black; /* Set background color to black */
-  color: white; /* Set text color to white */
+  color: black;
+  background-color: white; /* Set background color to white */
 }
 
 .filter-input::placeholder {
-  color: white; /* Set placeholder text color to white */
+  color: #777; /* Adjust placeholder text color */
 }
 
+/* ... Rest of the styles remain unchanged ... */
+
+
 .filter-button {
-  background-color:#45a049;
+  background-color: #45a049;
   color: white;
   padding: 10px 20px;
   border: none;
   font-size: 16px;
   cursor: pointer;
-  width: 100%;
-  
+  width: 100%; /* Adjust the width to 100% */
 }
+
+/* ... Rest of the styles remain unchanged ... */
+
 
 .filter-button:hover {
   opacity: 0.8;
