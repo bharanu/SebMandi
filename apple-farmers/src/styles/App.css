@@ -16,20 +16,20 @@ body {
 }
 
 .container {
-  max-width: 400px; /* Adjust the maximum width of the form container */
+  max-width: 100%; /* Adjust the maximum width to 100% */
   padding: 20px;
-  background-color: #fff; /* White container background */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to the container */
-  border-radius: 8px; /* Rounded corners for the container */
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
   margin-top: 30px;
-  
- /* Adjust the margin to move the container down from the center */
   display: flex;
-  flex-direction: column; /* Stack the input fields in a column layout */
-  align-items:flex-start; /* Center the content horizontally */
-  transform: translateX(0); /* Start outside the viewport (right side) */
-  transition: transform 0.25s ease; /* Add a transition effect to slide in */
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  transform: translateX(0);
+  transition: transform 0.25s ease;
+  overflow: visible; /* Remove the overflow hidden */
 }
+
 
 h1 {
   text-align: center;
@@ -75,7 +75,11 @@ form button {
   text-transform: uppercase;
   letter-spacing: 2px;
   transition: background-color 0.3s ease;
+  width: 100%; /* Make the button take up the full width */
 }
+
+/* ... Rest of the styles remain unchanged ... */
+
 
 form button:hover {
   background-color: #45a049;
@@ -153,14 +157,16 @@ form button:hover {
 /* Styles for the headings */
 .heading-container {
   text-align: center;
-  color: #f7eb0d;;
-  padding:30px; 
-  max-width: 600px;
-  margin: 0 auto; 
-  font-size:50px;
-  transform: translateX(100%); /* Start outside the viewport (right side) */
-  transition: transform 0.25s ease; /* Adjust the transition speed to 0.25 seconds */
+  color: #f7eb0d;
+  padding: 20px;
+  max-width: 100%; /* Adjust the maximum width to 100% */
+  margin: 0 auto;
+  font-size: 30px; /* Adjust font size for mobile */
+  transform: translateX(0);
+  transition: transform 0.25s ease;
+  overflow: visible; /* Remove the overflow hidden */
 }
+
 
 .heading {
   color: #f7eb0d; /* Dark green for the heading text */
