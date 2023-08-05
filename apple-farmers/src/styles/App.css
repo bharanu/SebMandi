@@ -97,14 +97,7 @@ form button:hover {
   transition: transform 0.25s ease;
 }
 
-@media (min-width: 768px) {
-  /* Apply different styles for screens with a minimum width of 768px (laptop screens) */
-  .filter-container {
-    flex-direction: row; /* Align the filter elements horizontally on larger screens */
-    align-items: center; /* Center the filter elements vertically */
-    justify-content: flex-start; /* Align elements from the start */
-  }
-}
+
 
 /* Rest of your styles remain unchanged */
 
