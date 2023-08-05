@@ -89,11 +89,25 @@ form button:hover {
 /* Styles for the filtering form */
 .filter-container {
   display: flex;
+  flex-direction: column; /* Stack the filter elements vertically on mobile */
+  align-items: stretch; /* Stretch the filter elements to full width */
   gap: 10px;
   margin-bottom: 20px;
-  transform: translateX(100%); /* Start outside the viewport (right side) */
-  transition: transform 0.25s ease; /* Add a transition effect to slide in */
+  transform: translateX(0);
+  transition: transform 0.25s ease;
 }
+
+@media (min-width: 768px) {
+  /* Apply different styles for screens with a minimum width of 768px (laptop screens) */
+  .filter-container {
+    flex-direction: row; /* Align the filter elements horizontally on larger screens */
+    align-items: center; /* Center the filter elements vertically */
+    justify-content: flex-start; /* Align elements from the start */
+  }
+}
+
+/* Rest of your styles remain unchanged */
+
 
 .filter-input {
   width: 100%; /* Adjust the width to 100% */
