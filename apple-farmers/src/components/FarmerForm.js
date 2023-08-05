@@ -87,6 +87,19 @@ const FarmerForm = ({ onSubmit }) => {
         required
       />
       <button type="submit">Submit</button>
+          <style jsx>{`
+        form {
+          display: flex;
+          flex-direction: column;
+          max-width: 100%;
+          padding: 1rem;
+        }
+        input,
+        button {
+          margin: 0.5rem 0;
+          padding: 0.5rem;
+        }
+      `}</style>
     </form>
   );
 };
