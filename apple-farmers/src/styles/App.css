@@ -46,7 +46,7 @@ form {
   align-items:center; /* Stack the input fields in a column layout */
  /* Center the content horizontally */
   width: 100%;
-  background-color: black;
+
    /* Make sure the form takes up the full width of the container */
 }
 
@@ -112,7 +112,7 @@ form button:hover {
 }
 
 .filter-input::placeholder {
-  color: #777; /* Adjust placeholder text color */
+  color: black; /* Adjust placeholder text color */
 }
 
 /* ... Rest of the styles remain unchanged ... */
