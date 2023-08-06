@@ -85,6 +85,7 @@ const FarmerForm = ({ onSubmit }) => {
         value={date}
         onChange={handleDateChange}
         required
+        placeholder="Select a date"
       />
       <button type="submit">Submit</button>
           <style jsx>{`
