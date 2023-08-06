@@ -46,6 +46,7 @@ form {
   align-items:center; /* Stack the input fields in a column layout */
  /* Center the content horizontally */
   width: 100%;
+  background-color: black;
    /* Make sure the form takes up the full width of the container */
 }
 
