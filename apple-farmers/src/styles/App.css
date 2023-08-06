@@ -226,7 +226,7 @@ form input[type="date"] {
 }
 
 /* Style the date input placeholder */
-form input[type="date"]::before {
+form input[type="date"]::placeholder {
   content: attr(placeholder); /* Set the placeholder text as the content */
   display: block;
   color: #777;
