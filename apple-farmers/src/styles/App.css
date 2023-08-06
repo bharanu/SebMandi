@@ -1,5 +1,9 @@
 
 /* App.css */
+/* Prevent horizontal scrolling */
+html, body {
+  overflow-x: hidden;
+}
 
 body {
   font-family: "Montserrat", sans-serif;
