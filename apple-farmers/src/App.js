@@ -201,6 +201,7 @@ const App = () => {
   />
   <input
     type="date"
+    placeholder="Select a date"
     value={dateFilter}
     onChange={handleDateFilterChange}
     className="filter-input"
